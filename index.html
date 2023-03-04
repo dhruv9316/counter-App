@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- ---------wrapper------- -->
+    <!-- bg-[#344151] -->
+    <div class="h-[100vh] w-[100vw] flex flex-col gap-5 justify-center items-center
+     bg-gradient-to-tl from-[#C40001] to-black">
+            <h2 class="text-white text-[20px] font-medium">Increment & Decrement</h2>
+            <!-- -----main-container---- -->            
+            <div class="flex bg-white text-[25px] rounded-sm text-[#C40001] gap-6 p-3 px-5">
+                <!-- ----- Minus-Icon--------- -->
+                <button onclick="decrement()">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <div id="countVal" class="border-l-2 border-r-2 text-[#001114]  bold border-[#bfbfbf] pl-10 pr-10">
+                    0
+                </div>
+                <!-- ----- Plus-Icon--------- -->
+                <button onclick="increment()">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <!-- ---reset button------- -->
+        <div>
+            <button onclick="reset()" class="text-[25px] text-[#C40001]
+            drop-shadow-2xl shadow-2xl bg-white px-2 rounded-md">
+                Reset
+            </button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
